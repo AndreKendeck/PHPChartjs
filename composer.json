@@ -1,0 +1,42 @@
+{
+    "name": "adecks/chartjs",
+    "description": "PHP Model Abstraction of ChartJs",
+    "keywords": [
+        "adecks",
+        "chartjs"
+    ],
+    "homepage": "https://github.com/AndreKendeck/PHPChartjs",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Andre Kendeck",
+            "email": "andrekendeck@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Adecks\\ChartJs\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Adecks\\ChartJs\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

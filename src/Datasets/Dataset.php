@@ -2,15 +2,17 @@
 
 namespace Adecks\ChartJs\Datasets;
 
+use Adecks\ChartJs\Options;
+
 abstract class Dataset
 {
+    use Options;
+
+    /** @var string */
     protected $label = null;
 
+    /** @var array */
     protected $data = [];
-
-    protected $backgroundColor = 'rgba(0, 0, 0, 0.1)';
-
-    protected $fill = false;
 
     /**
      * @param string $label

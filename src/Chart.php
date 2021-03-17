@@ -24,6 +24,7 @@ abstract class Chart implements JsonSerializable
      * @var Dataset[]  
      */
     protected $datasets = [];
+    
 
     /** @var Options  */
     protected $options = null;

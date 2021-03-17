@@ -3,7 +3,10 @@
     "description": "PHP Model Abstraction of ChartJs",
     "keywords": [
         "adecks",
-        "chartjs"
+        "chartjs", 
+        "charts", 
+        "php charts", 
+        ""
     ],
     "homepage": "https://github.com/AndreKendeck/PHPChartjs",
     "license": "MIT",

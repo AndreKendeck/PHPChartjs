@@ -5,7 +5,8 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/adecks/chartjs.svg?style=flat-square)](https://scrutinizer-ci.com/g/adecks/chartjs)
 [![Total Downloads](https://img.shields.io/packagist/dt/adecks/chartjs.svg?style=flat-square)](https://packagist.org/packages/adecks/chartjs)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+I made this package, since most of my PHP projects make use of graphs, my go to graphing library
+if ChartJs
 
 ## Installation
 
@@ -24,7 +25,7 @@ composer require adecks/chartjs
 ### Testing
 
 ``` bash
-composer test
+vendor/bin/phpunit 
 ```
 
 ### Changelog
@@ -42,12 +43,7 @@ If you discover any security related issues, please email andrekendeck@gmail.com
 ## Credits
 
 - [Andre Kendeck](https://github.com/adecks)
-- [All Contributors](../../contributors)
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-## PHP Package Boilerplate
-
-This package was generated using the [PHP Package Boilerplate](https://laravelpackageboilerplate.com).

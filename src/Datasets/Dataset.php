@@ -23,4 +23,40 @@ abstract class Dataset
         $this->label = $label;
         $this->data = $data;
     }
+
+    /**
+     * Get the value of label
+     *
+     * @return string 
+     */
+    public function getLabel(): string
+    {
+        return $this->label;
+    }
+
+    /**
+     * @param string $label
+     * @return void
+     */
+    public function setLabel(string $label): void
+    {
+        $this->label = $label;
+    }
+
+    /**
+     * @return array
+     */
+    public function getData(): array
+    {
+        return $this->data;
+    }
+
+    /**
+     * @param array $data
+     * @return void
+     */
+    public function setData(array $data): void
+    {
+        $this->data = $data;
+    }
 }

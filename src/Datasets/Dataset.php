@@ -2,7 +2,9 @@
 
 namespace Adecks\ChartJs\Datasets;
 
-abstract class Dataset
+use JsonSerializable;
+
+class Dataset implements JsonSerializable
 {
     use Options;
 
@@ -56,5 +58,15 @@ abstract class Dataset
     public function setData(array $data): void
     {
         $this->data = $data;
+    }
+
+    public function jsonSerialize()
+    {
+        return (object) [];
+    }
+
+    public function __toString()
+    {
+        return (string) $this->jsonSerialize();
     }
 }

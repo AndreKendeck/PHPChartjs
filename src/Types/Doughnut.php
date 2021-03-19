@@ -13,6 +13,6 @@ class Doughnut extends Chart
      */
     public function __construct(array $labels = [], Options $options = null)
     {
-        parent::__construct('bubble', $labels, $options);
+        parent::__construct('doughnut', $labels, $options);
     }
 }

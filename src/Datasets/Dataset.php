@@ -2,8 +2,6 @@
 
 namespace Adecks\ChartJs\Datasets;
 
-use Adecks\ChartJs\Options;
-
 abstract class Dataset
 {
     use Options;

@@ -24,7 +24,7 @@ abstract class Chart implements JsonSerializable
      * @var Dataset[]  
      */
     protected $datasets = [];
-    
+
 
     /** @var Options  */
     protected $options = null;
@@ -32,9 +32,11 @@ abstract class Chart implements JsonSerializable
     /**
      * @param string $type
      */
-    public function __construct(string $type = '')
+    public function __construct(string $type = '', array $labels = [], Options $options = null)
     {
         $this->type = $type;
+        $this->labels = $labels;
+        $this->options = $options;
     }
 
     /**
@@ -81,12 +83,31 @@ abstract class Chart implements JsonSerializable
         array_push($this->labels, $label);
     }
 
+
+    /**
+     * Add an array of labels to the object
+     * @param array $labels
+     * @return void
+     */
+    public function addLabels(array $labels): void
+    {
+        foreach ($labels as $label) {
+            $this->addLabel($label);
+        }
+    }
+
     /**
      * @return void
      */
     public function jsonSerialize()
     {
-        return (object) [];
+        return (object) [
+            'data' => [
+                'labels' => $this->labels,
+                'datasets' => $this->datasets
+            ],
+            'options' => $this->options
+        ];
     }
 
     /**

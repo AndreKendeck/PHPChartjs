@@ -34,25 +34,25 @@ trait Options
     /** @var string  */
     protected $clip = 'borderWidth / 2';
 
-    /** @var string */
+    /** @var string|null */
     protected $hoverBackgroundColor = null;
 
-    /** @var string */
+    /** @var string|null */
     protected $hoverBorderCapStyle = null;
 
-    /** @var string */
+    /** @var string|null */
     protected $hoverBorderColor = null;
 
-    /** @var int[] */
+    /** @var int[]|null */
     protected $hoverBorderDash = null;
 
-    /** @var int */
+    /** @var int|null */
     protected $hoverBorderDashOffset = null;
 
-    /** @var string  */
+    /** @var string|null  */
     protected $hoverBorderJoinStyle = null;
 
-    /** @var int */
+    /** @var int|null */
     protected $hoverBorderWidth = null;
 
     /** @var float */
@@ -73,10 +73,10 @@ trait Options
     /** @var int */
     protected $pointHitRadius = 1;
 
-    /** @var string */
+    /** @var string|null */
     protected $pointHoverBackgroundColor = null;
 
-    /** @var string */
+    /** @var string|null */
     protected $pointHoverBorderColor = null;
 
     /** @var int */

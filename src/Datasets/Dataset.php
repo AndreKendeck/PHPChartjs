@@ -62,7 +62,76 @@ class Dataset implements JsonSerializable
 
     public function jsonSerialize()
     {
-        return (object) [];
+        $data = [
+            'label' => $this->label,
+            'data' => $this->data,
+            'backgroundColor' => $this->backgroundColor,
+            'borderColor' => $this->borderColor,
+            'borderWidth' => $this->borderWidth,
+            'borderDash' => $this->borderDash,
+            'borderDashOffset' => $this->borderDashOffset,
+            'borderJoinStyle' => $this->borderJoinStyle,
+            'cubicInterpolation' => $this->cubicInterpolationMode,
+            'clip' => $this->clip,
+            'fill' => $this->fill,
+            'lineTension' => $this->lineTension,
+            'order' => $this->order,
+            'pointBackgroundColor' => $this->pointBackgroundColor,
+            'pointBorderColor' => $this->pointBorderColor,
+            'pointBorderWidth' => $this->pointBorderWidth,
+            'pointHitRadius' => $this->pointHitRadius,
+            'pointHoverBorderWidth' => $this->pointHoverBorderWidth,
+            'pointHoverRadius' => $this->pointHoverRadius,
+            'pointRadius' => $this->pointRadius,
+            'pointRotation' => $this->pointRotation,
+            'pointStyle' => $this->pointStyle,
+        ];
+
+        if ($this->showLine) {
+            $data['showLine'] = $this->showLine;
+        }
+
+        if ($this->spanGaps) {
+            $data['spanGaps'] = $this->spanGaps;
+        }
+
+        if ($this->hoverBackgroundColor) {
+            $data['hoverBackgroundColor'] = $this->hoverBackgroundColor;
+        }
+
+        if ($this->hoverBorderCapStyle) {
+            $data['hoverBorderCapStyle'] = $this->hoverBorderCapStyle;
+        }
+
+        if ($this->hoverBorderColor) {
+            $data['hoverBorderColor'] = $this->hoverBorderColor;
+        }
+
+        if ($this->hoverBorderDash) {
+            $data['hoverBorderDash'] = $this->hoverBorderDash;
+        }
+
+        if ($this->hoverBorderDashOffset) {
+            $data['hoverBorderDashOffset'] = $this->hoverBorderDashOffset;
+        }
+
+        if ($this->hoverBorderJoinStyle) {
+            $data['hoverBorderJoinStyle'] = $this->hoverBorderJoinStyle;
+        }
+
+        if ($this->hoverBorderWidth) {
+            $data['hoverBorderWidth'] = $this->hoverBorderWidth;
+        }
+
+        if ($this->pointHoverBackgroundColor) {
+            $data['pointHoverBackgroundColor'] = $this->pointHoverBackgroundColor;
+        }
+
+        if ($this->pointHoverBorderColor) {
+            $data['pointHoverBorderColor'] = $this->pointHoverBorderColor;
+        }
+
+        return $data;
     }
 
     public function __toString()

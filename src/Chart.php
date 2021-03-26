@@ -9,7 +9,7 @@ abstract class Chart implements JsonSerializable
 {
     /**
      * The type of chart.
-     * @var string
+     * @var string|null
      */
     protected $type = null;
 
@@ -32,7 +32,7 @@ abstract class Chart implements JsonSerializable
     /**
      * @param string $type
      */
-    public function __construct(string $type = '', array $labels = [], Options $options = null)
+    public function __construct(string $type = null, array $labels = [], Options $options = null)
     {
         $this->type = $type;
         $this->labels = $labels;

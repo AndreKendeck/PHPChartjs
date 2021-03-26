@@ -1,12 +1,11 @@
-# Very short description of the package
+# PHP Chart.js 
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/adecks/chartjs.svg?style=flat-square)](https://packagist.org/packages/adecks/chartjs)
-[![Build Status](https://img.shields.io/travis/adecks/chartjs/master.svg?style=flat-square)](https://travis-ci.org/adecks/chartjs)
-[![Quality Score](https://img.shields.io/scrutinizer/g/adecks/chartjs.svg?style=flat-square)](https://scrutinizer-ci.com/g/adecks/chartjs)
+[![PHP Composer](https://github.com/AndreKendeck/PHPChartjs/actions/workflows/php.yml/badge.svg?branch=main)](https://github.com/AndreKendeck/PHPChartjs/actions/workflows/php.yml)
 [![Total Downloads](https://img.shields.io/packagist/dt/adecks/chartjs.svg?style=flat-square)](https://packagist.org/packages/adecks/chartjs)
 
 I made this package, since most of my PHP projects make use of graphs, my go to graphing library
-if ChartJs
+if you require more information about chartjs please go here.
 
 ## Installation
 

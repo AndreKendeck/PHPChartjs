@@ -1,11 +1,11 @@
 {
     "name": "adecks/chartjs",
-    "description": "PHP Model Abstraction of ChartJs",
+    "description": "PHP Model Abstraction of ChartJs Objects",
     "keywords": [
         "adecks",
         "chartjs", 
         "charts", 
-        "php charts", 
+        "phpcharts", 
         "charts"
     ],
     "homepage": "https://github.com/AndreKendeck/PHPChartjs",
@@ -34,8 +34,10 @@
             "Adecks\\ChartJs\\Tests\\": "tests"
         }
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "scripts": {
-        "test": "vendor/bin/phpunit",
+        "test": "php vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     },
     "config": {

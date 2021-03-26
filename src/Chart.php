@@ -74,6 +74,15 @@ abstract class Chart implements JsonSerializable
     }
 
     /**
+     * Adds a dataset to the to chart object
+     * @return array
+     */
+    public function getDatasets(): array
+    {
+        return $this->datasets;
+    }
+
+    /**
      * Add a X-Axis label to the chart
      * @param string $label
      * @return void
@@ -102,6 +111,7 @@ abstract class Chart implements JsonSerializable
     public function jsonSerialize()
     {
         return (object) [
+            'type' => $this->type,
             'data' => [
                 'labels' => $this->labels,
                 'datasets' => $this->datasets

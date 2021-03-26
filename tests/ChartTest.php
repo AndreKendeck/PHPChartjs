@@ -3,6 +3,7 @@
 namespace Adecks\ChartJs\Tests;
 
 use Adecks\ChartJs\Chart;
+use Adecks\ChartJs\Datasets\Dataset;
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
 
@@ -52,6 +53,29 @@ class ChartTest extends TestCase
         $stub = $this->getMockForAbstractClass(Chart::class);
         $stub->setType('line');
         $this->assertIsString($stub->getType());
+        $this->assertTrue('line' === $stub->getType());
     }
 
+    /** @test **/
+    public function it_can_add_a_dataset()
+    {
+        $stub = $this->getMockForAbstractClass(Chart::class);
+        $stub->addDataset(new Dataset('My First Dataset', [1, 2, 3, 4]));
+        $this->assertIsArray($stub->getDatasets());
+    }
+
+    /** @test **/
+    public function it_serializes_successfully()
+    {
+        $stub = $this->getMockForAbstractClass(Chart::class);
+        $this->assertIsString(json_encode($stub));
+    }
+
+    /** @test **/
+    public function it_can_be_casted_to_a_string()
+    {
+        $stub = $this->getMockForAbstractClass(Chart::class);
+        $message = "{$stub}";
+        $this->assertIsString($message);
+    }
 }

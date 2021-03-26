@@ -131,7 +131,7 @@ class Dataset implements JsonSerializable
             $data['pointHoverBorderColor'] = $this->pointHoverBorderColor;
         }
 
-        return $data;
+        return (object) $data;
     }
 
     public function __toString()

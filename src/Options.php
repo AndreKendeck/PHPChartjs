@@ -18,8 +18,14 @@ class Options implements JsonSerializable
      */
     protected $spanGaps = false;
 
+    protected $displayLegend;
+
     public function jsonSerialize()
     {
-        return (object) [];
+        return (object) [
+            'scales' => [
+                'xAxes' 
+            ]
+        ];
     }
 }

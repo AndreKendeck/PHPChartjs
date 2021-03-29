@@ -60,6 +60,15 @@ class Dataset implements JsonSerializable
         $this->data = $data;
     }
 
+    /**
+     * @param mixed $data
+     * @return void
+     */
+    public function addData($data): void
+    {
+        array_push($this->data, $data);
+    }
+
     public function jsonSerialize()
     {
         $data = [

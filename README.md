@@ -58,6 +58,11 @@ class ExampleController extends Controller {
 }
 ```
 
+**Creating a chart with a (x,y) value**
+```php
+(new Bubble(['Jan','Feb','Mar']))->addData(new Dataset('MyfirsData', ['x' => 123 , 'y' => 321 , 'r' => 10 ); 
+```
+
 **The JSON structure from result**
 ``` json
 { 

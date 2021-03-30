@@ -5,8 +5,7 @@
         "adecks",
         "chartjs", 
         "charts", 
-        "phpcharts", 
-        "charts"
+        "phpcharts"
     ],
     "homepage": "https://github.com/AndreKendeck/PHPChartjs",
     "license": "MIT",

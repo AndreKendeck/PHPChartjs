@@ -4,8 +4,7 @@
     "keywords": [
         "adecks",
         "chartjs", 
-        "charts", 
-        "phpcharts"
+        "charts"
     ],
     "homepage": "https://github.com/AndreKendeck/PHPChartjs",
     "license": "MIT",
@@ -13,8 +12,7 @@
     "authors": [
         {
             "name": "Andre Kendeck",
-            "email": "andrekendeck@gmail.com",
-            "role": "Developer"
+            "email": "andrekendeck@gmail.com"
         }
     ],
     "require": {

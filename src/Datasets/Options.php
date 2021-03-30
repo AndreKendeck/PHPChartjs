@@ -207,6 +207,15 @@ trait Options
     }
 
     /**
+     * @param array $hoverBorderDash
+     * @return void
+     */
+    public function setHoverBorderDash(array $hoverBorderDash): void
+    {
+        $this->hoverBorderDash = $hoverBorderDash;
+    }
+
+    /**
      * @return array|null
      */
     public function getHoverBorderDash(): ?array
@@ -299,11 +308,18 @@ trait Options
         $this->borderDash = $borderDash;
     }
 
+    /**
+     * @return float
+     */
     public function getBorderDashOffset(): float
     {
         return $this->borderDashOffset;
     }
 
+    /**
+     * @param float $borderDashOffset
+     * @return void
+     */
     public function setBorderDashOffset(float $borderDashOffset): void
     {
         $this->borderDashOffset = $borderDashOffset;
@@ -489,9 +505,9 @@ trait Options
     }
 
     /**
-     * @return integer
+     * @return string|null
      */
-    public function getPointHoverBackgroundColor(): int
+    public function getPointHoverBackgroundColor(): ?string
     {
         return $this->pointHoverBackgroundColor;
     }
@@ -516,10 +532,10 @@ trait Options
 
 
     /**
-     * @param integer $pointHoverBorderColor
+     * @param string $pointHoverBorderColor
      * @return void
      */
-    public function setPointHoverBorderColor(int $pointHoverBorderColor): void
+    public function setPointHoverBorderColor(string $pointHoverBorderColor): void
     {
         $this->pointHoverBorderColor = $pointHoverBorderColor;
     }

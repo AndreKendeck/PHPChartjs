@@ -3,7 +3,6 @@
 namespace Adecks\ChartJs\Types;
 
 use Adecks\ChartJs\Chart;
-use Adecks\ChartJs\Options;
 
 class Bar extends Chart
 {
@@ -11,7 +10,7 @@ class Bar extends Chart
      * @param array $labels
      * @param Options $options
      */
-    public function __construct(array $labels = [], Options $options = null)
+    public function __construct(array $labels = [], array $options = [])
     {
         parent::__construct('bar', $labels, $options);
     }

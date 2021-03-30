@@ -78,4 +78,12 @@ class ChartTest extends TestCase
         $message = "{$stub}";
         $this->assertIsString($message);
     }
+
+    /** @test **/
+    public function it_can_have_have_options()
+    {
+        $stub = $this->getMockForAbstractClass(Chart::class);
+        $stub->setOptions(['value' => 'something']);
+        $this->assertTrue($stub->getOptions() === ['value' => 'something']);
+    }
 }

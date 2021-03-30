@@ -12,7 +12,7 @@
 
 I made this package, since most of my PHP projects make use of graphs, my go to graphing library
 
-if you require more information about chartjs please go here.
+if you require more information about chartjs please go [Offical Docs](https://www.chartjs.org/docs/master/).
 
   
 
@@ -64,7 +64,7 @@ class ExampleController extends Controller {
 ```
 
 **The JSON structure from result**
-``` json
+```json
 { 
 "type": "line",
 "data": {
@@ -76,11 +76,9 @@ class ExampleController extends Controller {
 	}
 }
 ```
-
 ## Types of Charts.
 
 ```php
-use Adecks\ChartJs\Types\Area; 
 use Adecks\ChartJs\Types\Bar;
 use Adecks\ChartJs\Types\Bubble; 
 use Adecks\ChartJs\Types\Doughnut; 

@@ -26,17 +26,36 @@ abstract class Chart implements JsonSerializable
     protected $datasets = [];
 
 
-    /** @var Options  */
-    protected $options = null;
+    /** @var array */
+    protected $options = [];
 
     /**
      * @param string $type
+     * @param array $labels
+     * @param array $options
      */
-    public function __construct(string $type = null, array $labels = [], Options $options = null)
+    public function __construct(string $type = null, array $labels = [], array $options = [])
     {
         $this->type = $type;
         $this->labels = $labels;
         $this->options = $options;
+    }
+
+    /**
+     * @param array $options
+     * @return void
+     */
+    public function setOptions(array $options): void
+    {
+        $this->options = $options;
+    }
+
+    /**
+     * @return array
+     */
+    public function getOptions(): array
+    {
+        return $this->options;
     }
 
     /**
